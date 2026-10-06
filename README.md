@@ -4,22 +4,7 @@
 
 TrainLens AutoResearch is a small, provider-neutral Skill that teaches coding agents such as Codex and Claude Code how to run controlled ML research loops:
 
-```text
-inspect project / notebook
-        ↓
-TrainLens evidence
-        ↓
-state uncertainty
-        ↓
-form hypothesis
-        ↓
-run cheapest informative experiment
-        ↓
-TrainLens evidence
-        ↓
-keep / revert / investigate
-        ↺
-```
+![TrainLens AutoResearch evidence-driven research loop](images/autoresearch-loop.svg)
 
 It is intentionally **not** an AutoML framework, agent framework, tracker, scheduler, or hyperparameter-search system. The agent already provides the reasoning and execution runtime. [TrainLens](https://github.com/edujbarrios/trainlens) provides the evidence layer.
 
@@ -140,6 +125,8 @@ Then use this Skill on your own ML project or notebook.
 
 ```text
 trainlens-autoresearch/
+├── images/
+│   └── autoresearch-loop.svg
 ├── README.md
 ├── SKILL.md
 ├── AGENTS.md
